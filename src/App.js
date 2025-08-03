@@ -230,7 +230,7 @@ function App() {
                   <div className="logo-container animate-float">
                     <img 
                       src={logoImage} 
-                      alt="Logo" 
+                      alt="logo" 
                       style={{ 
                         borderRadius: '50%', 
                         width: '120px', 
