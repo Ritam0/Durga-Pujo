@@ -85,7 +85,7 @@ function App() {
           <div className="nav-logo-container" onClick={() => scrollToSection('home')}>
             <img 
               src={logoImage} 
-              alt="বাংলার পুজো পার্বণ Logo" 
+              alt="স্বপ্নতরী Logo" 
               className="nav-logo"
               style={{ 
                 width: '45px', 
@@ -95,12 +95,12 @@ function App() {
                 boxShadow: '0 2px 8px rgba(107, 91, 71, 0.2)'
               }} 
             />
-            <div className="logo-text" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>বাংলার পুজো পার্বণ</div>
+            <div className="logo-text" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>স্বপ্নতরী</div>
           </div>
           <div style={{ display: 'none' }} className="desktop-nav">
             <button onClick={() => scrollToSection('home')} className="nav-button">হোম</button>
             <button onClick={() => scrollToSection('competition')} className="nav-button">প্রতিযোগিতা</button>
-            <button onClick={() => scrollToSection('gallery')} className="nav-button">গ্যালারি</button>
+            {/* <button onClick={() => scrollToSection('gallery')} className="nav-button">গ্যালারি</button> */}
             <button onClick={() => scrollToSection('contact')} className="nav-button">যোগাযোগ</button>
           </div>
           <button
@@ -126,7 +126,7 @@ function App() {
           <div className="mobile-menu">
             <button onClick={() => scrollToSection('home')} className="mobile-menu-item">হোম</button>
             <button onClick={() => scrollToSection('competition')} className="mobile-menu-item">প্রতিযোগিতা</button>
-            <button onClick={() => scrollToSection('gallery')} className="mobile-menu-item">গ্যালারি</button>
+            {/* <button onClick={() => scrollToSection('gallery')} className="mobile-menu-item">গ্যালারি</button> */}
             <button onClick={() => scrollToSection('contact')} className="mobile-menu-item">যোগাযোগ</button>
           </div>
         )}
@@ -137,13 +137,15 @@ function App() {
         <section id="home" className="hero-section animate-fade-in-up">
           <div className="hero-content">
             <h1 className="hero-title">শারদ সম্মান প্রতিযোগিতা ২০২৫</h1>
-            <p className="hero-subtitle">বাংলার পুজো পার্বণ গ্রুপ কর্তৃক আয়োজিত</p>
-            <button
-              onClick={() => setIsModalOpen(true)}
+            <p className="hero-subtitle">স্বপ্নতরী গ্রুপ কর্তৃক আয়োজিত</p>
+            <a
+              href="https://forms.gle/nx2X696MmmbvUc8a8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hero-cta-button animate-float"
             >
               সেরা পুজো ২০২৫
-            </button>
+            </a>
           </div>
         </section>
 
@@ -153,14 +155,14 @@ function App() {
             <h2 className="section-title animate-fade-in-up">আমাদের প্রতিযোগিতা</h2>
             <div className="glass-card animate-scale-in" style={{ padding: '3rem' }}>
               <p style={{ fontSize: '1.125rem', lineHeight: '1.7', color: '#4B5563', marginBottom: '2rem', textAlign: 'center' }}>
-                ২০২৫ সালের শারদীয় দুর্গাপূজা উপলক্ষে বাংলার পুজো পার্বণ ফেসবুক গ্রুপ আয়োজন করছে 'শারদ সম্মান প্রতিযোগিতা ২০২৫'।
+                ২০২৫ সালের শারদীয় দুর্গাপূজা উপলক্ষে স্বপ্নতরী ফেসবুক গ্রুপ আয়োজন করছে 'শারদ সম্মান প্রতিযোগিতা ২০২৫'।
                 এই প্রতিযোগিতায় অংশগ্রহণের মাধ্যমে আপনার পুজো কমিটির সৃজনশীলতা, ঐতিহ্য এবং সৌন্দর্যের স্বীকৃতি মিলবে।
               </p>
               <div className="competition-grid">
                 <div className="competition-card animate-fade-in-left">
                   <h3>নিয়মাবলী</h3>
                   <ul className="competition-list">
-                    <li>প্রতিযোগিতায় অংশগ্রহণের জন্য সেরা পুজো ২০২৫ বাটনে ক্লিক করে ফর্মটি পূরণ করতে হবে।</li>
+                    <li>প্রতিযোগিতায় অংশগ্রহণের জন্য 'সেরা পুজো ২০২৫' বাটনে ক্লিক করে গুগল ফর্মটি পূরণ করতে হবে।</li>
                     <li>প্রতিটি পুজো কমিটিকে তাদের সেরা প্রতিমা, প্যান্ডেল ও আলোকসজ্জার ছবি জমা দিতে হবে।</li>
                     <li>জমা দেওয়ার শেষ তারিখ: ১০ই অক্টোবর, ২০২৫।</li>
                   </ul>
@@ -179,7 +181,8 @@ function App() {
           </div>
         </section>
 
-        {/* Photo Gallery Section */}
+        {/* Photo Gallery Section - Commented out for now, will add images later */}
+        {/* 
         <section id="gallery" className="gallery-section" style={{ padding: '6rem 2rem' }}>
           <h2 className="section-title animate-fade-in-up">গ্যালারি</h2>
           <div className="gallery-grid">
@@ -197,6 +200,7 @@ function App() {
             ))}
           </div>
         </section>
+        */}
 
         {/* Contact Section */}
         <section id="contact" className="contact-section" style={{ padding: '6rem 2rem' }}>
@@ -210,15 +214,15 @@ function App() {
                   <div className="contact-details">
                     <div className="contact-item">
                       <Mail />
-                      <span>contact@banglarpujoparbon.com</span>
+                      <span>swapnatari.contact@gmail.com</span>
                     </div>
                     <div className="contact-item">
                       <Phone />
-                      <span>+91 9876543210</span>
+                      <span>+91 6289 492 935</span>
                     </div>
                     <div className="contact-item">
                       <MapPin />
-                      <span>কলকাতা, পশ্চিমবঙ্গ, ভারত</span>
+                      <span>Hooghly, West Bengal, India</span>
                     </div>
                   </div>
                 </div>
@@ -236,7 +240,7 @@ function App() {
                     />
                   </div>
                   <a
-                    href="https://facebook.com/groups/banglarpujoparbon"
+                    href="https://www.facebook.com/share/g/19nstYkUAP/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="facebook-button"
@@ -254,7 +258,7 @@ function App() {
       {/* Footer */}
       <footer className="footer" style={{ color: 'white', padding: '2rem', textAlign: 'center' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <p>&copy; {new Date().getFullYear()} বাংলার পুজো পার্বণ। সর্বস্বত্ব সংরক্ষিত।</p>
+          <p>&copy; {new Date().getFullYear()} স্বপ্নতরী। সর্বস্বত্ব সংরক্ষিত।</p>
         </div>
       </footer>
 
