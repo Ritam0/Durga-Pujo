@@ -136,15 +136,15 @@ function App() {
         {/* Hero Section */}
         <section id="home" className="hero-section animate-fade-in-up">
           <div className="hero-content">
-            <h1 className="hero-title">শারদ সম্মান প্রতিযোগিতা ২০২৫</h1>
-            <p className="hero-subtitle">স্বপ্নতরী গ্রুপ কর্তৃক আয়োজিত</p>
+            <h1 className="hero-title">সেরা পুজো ১৪৩২ 🎊</h1>
+            <p className="hero-subtitle">স্বপ্নতরী ফেসবুক গ্রুপ কর্তৃক আয়োজিত</p>
             <a
-              href="https://forms.gle/nx2X696MmmbvUc8a8"
+              href="https://forms.gle/EHY52H8XfguJTm8d7"
               target="_blank"
               rel="noopener noreferrer"
               className="hero-cta-button animate-float"
             >
-              সেরা পুজো ২০২৫
+              এখনই অংশগ্রহণ করুন
             </a>
           </div>
         </section>
@@ -152,30 +152,66 @@ function App() {
         {/* Competition Details Section */}
         <section id="competition" className="competition-section" style={{ padding: '6rem 2rem' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <h2 className="section-title animate-fade-in-up">আমাদের প্রতিযোগিতা</h2>
+            <h2 className="section-title animate-fade-in-up">সেরা পুজো ১৪৩২ 🎊</h2>
             <div className="glass-card animate-scale-in" style={{ padding: '3rem' }}>
-              <p style={{ fontSize: '1.125rem', lineHeight: '1.7', color: '#4B5563', marginBottom: '2rem', textAlign: 'center' }}>
-                ২০২৫ সালের শারদীয় দুর্গাপূজা উপলক্ষে স্বপ্নতরী ফেসবুক গ্রুপ আয়োজন করছে 'শারদ সম্মান প্রতিযোগিতা ২০২৫'।
-                এই প্রতিযোগিতায় অংশগ্রহণের মাধ্যমে আপনার পুজো কমিটির সৃজনশীলতা, ঐতিহ্য এবং সৌন্দর্যের স্বীকৃতি মিলবে।
+              <p style={{ fontSize: '1.25rem', lineHeight: '1.7', color: '#4B5563', marginBottom: '2rem', textAlign: 'center', fontWeight: '600' }}>
+                আমাদের স্বপ্নতরী ফেসবুক গ্রুপ এর পক্ষ থেকে আয়োজন করা হয়েছে - "সেরা পুজো ১৪৩২" 🎊<br/>
+                🔥এই প্রতিযোগিতাটি শুধু মাত্র বারোয়ারি বা ক্লাব এর পুজোর জন্য প্রযোজ্য
               </p>
-              <div className="competition-grid">
+              
+              {/* Entry Fee and Contact */}
+              <div style={{ backgroundColor: '#FFF0E0', borderRadius: '1rem', padding: '2rem', marginBottom: '3rem', textAlign: 'center' }}>
+                <h3 style={{ color: '#BB6653', marginBottom: '1rem', fontSize: '1.5rem' }}>প্রবেশমূল্য ও যোগাযোগ</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>✅ আমাদের প্রতিযোগিতায় অংশগ্রহণ করতে <strong>৩০০/- টাকা</strong> প্রবেশমূল্য লাগছে</p>
+                <p style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>📍পুরস্কারে থাকছে চমক</p>
+                <p style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>📲 অংশগ্রহণ করতে যোগাযোগ করুন — <strong>+91 62894 92935</strong> এই নম্বরে</p>
+                <p style={{ fontSize: '1.1rem' }}>অথবা click করুন আমাদের registration form এ - <a href="https://forms.gle/EHY52H8XfguJTm8d7" target="_blank" rel="noopener noreferrer" style={{ color: '#BB6653', textDecoration: 'underline' }}>https://forms.gle/EHY52H8XfguJTm8d7</a></p>
+              </div>
+
+              {/* Awards Section */}
+              <div className="competition-grid" style={{ marginBottom: '3rem' }}>
                 <div className="competition-card animate-fade-in-left">
-                  <h3>নিয়মাবলী</h3>
-                  <ul className="competition-list">
-                    <li>প্রতিযোগিতায় অংশগ্রহণের জন্য 'সেরা পুজো ২০২৫' বাটনে ক্লিক করে গুগল ফর্মটি পূরণ করতে হবে।</li>
-                    <li>প্রতিটি পুজো কমিটিকে তাদের সেরা প্রতিমা, প্যান্ডেল ও আলোকসজ্জার ছবি জমা দিতে হবে।</li>
-                    <li>জমা দেওয়ার শেষ তারিখ: ১০ই অক্টোবর, ২০২৫।</li>
+                  <h3 style={{ color: '#BB6653', marginBottom: '1.5rem' }}>🏆 মুখ্য পুরস্কার বিভাগ</h3>
+                  <ul className="competition-list" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                    <li>⭐ <strong>সেরা প্রতিমা</strong></li>
+                    <li>⭐ প্রতিমায় প্রথম, দ্বিতীয়, তৃতীয়</li>
+                    <li>⭐ <strong>সেরা মণ্ডপসজ্জা</strong></li>
+                    <li>⭐ মণ্ডপসজ্জায় প্রথম, দ্বিতীয়, তৃতীয়</li>
+                    <li>⭐ <strong>সেরার সেরা</strong></li>
                   </ul>
                 </div>
                 <div className="competition-card animate-fade-in-right">
-                  <h3>পুরস্কার</h3>
-                  <ul className="competition-list">
-                    <li>সেরা প্রতিমা: প্রথম, দ্বিতীয় ও তৃতীয় স্থান।</li>
-                    <li>সেরা প্যান্ডেল: প্রথম, দ্বিতীয় ও তৃতীয় স্থান।</li>
-                    <li>সেরা আলোকসজ্জা: প্রথম, দ্বিতীয় ও তৃতীয় স্থান।</li>
-                    <li>বিজয়ীদের জন্য থাকবে বিশেষ ট্রফি এবং শংসাপত্র।</li>
+                  <h3 style={{ color: '#BB6653', marginBottom: '1.5rem' }}>🌟 বিশেষ পুরস্কার</h3>
+                  <ul className="competition-list" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                    <li>⭐ <strong>৪ টি বিশেষ পুরস্কার</strong></li>
+                    <li>⭐ সেরা উদীয়মান</li>
+                    <li>⭐ সেরা প্রস্তুতি</li>
+                    <li>⭐ সেরা ভাবনা</li>
+                    <li>⭐ সেরা মুখশ্রী</li>
+                    <li>⭐ সেরা মণ্ডপ শিল্পী</li>
+                    <li>⭐ সেরা প্রতিমা শিল্পী</li>
                   </ul>
                 </div>
+              </div>
+
+              {/* Additional Info */}
+              <div style={{ backgroundColor: '#E8F4F8', borderRadius: '1rem', padding: '2rem', marginBottom: '3rem' }}>
+                <p style={{ fontSize: '1.1rem', textAlign: 'center', marginBottom: '1rem', fontWeight: '600' }}>🎯 প্রতিযোগী বেশি হলে পুরস্কারের সংখ্যা বাড়ানো হবে</p>
+                <p style={{ fontSize: '1.1rem', textAlign: 'center', fontWeight: '600', color: '#BB6653' }}>💯 বিচারকের সিদ্ধান্ত চূড়ান্ত সিদ্ধান্ত হিসাবে গ্রহণ করতে হবে</p>
+              </div>
+
+              {/* Rules Section */}
+              <div className="competition-card" style={{ marginBottom: '0' }}>
+                <h3 style={{ color: '#BB6653', marginBottom: '1.5rem', textAlign: 'center' }}>নিয়মাবলী</h3>
+                <ul className="competition-list" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                  <li><strong>১.</strong> প্রতিযোগিতা হবে অনলাইন এ</li>
+                  <li><strong>২.</strong> ছবি ভিডিও submit করতে হবে পঞ্চমী সকাল থেকে রাতের মধ্যে</li>
+                  <li><strong>৩.</strong> মণ্ডপের ও প্রতিমার ছবি ভিডিও submit করতে হবে (কোথায় কিভাবে করতে হবে সেটা জানিয়ে দেওয়া হবে)</li>
+                  <li><strong>৪.</strong> Form fillup হয়ে গেলে whatsapp group এ add করা হবে যাবতীয় তথ্য ওখানেই দেওয়া হবে</li>
+                  <li><strong>৫.</strong> Winner ঘোষণা হবে ষষ্ঠি রাতের মধ্যে</li>
+                  <li><strong>৬.</strong> সপ্তমী তে পুরস্কার বিতরণী হবে</li>
+                  <li><strong>৭.</strong> "সেরা প্রস্তুতি" বিভাগের জন্য আমাদের ফেসবুক গ্রুপ এ প্রস্তুতির ছবি পোস্ট করতে হবে, মহালয়ার আগে অবধি এই বিভাগের ছবি নেওয়া হবে</li>
+                </ul>
               </div>
             </div>
           </div>
