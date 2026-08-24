@@ -3,6 +3,7 @@ import { Menu, X, Phone, MapPin, Facebook, Trophy, Calendar, Star } from 'lucide
 import './App.css';
 import logoImage from './gallery/logo.png';
 import posterImage from './gallery/poster-1433.png';
+import PhotoGallery from './PhotoGallery';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,6 +45,7 @@ function App() {
             <button onClick={() => scrollToSection('home')} className="nav-button">হোম</button>
             <button onClick={() => scrollToSection('competition')} className="nav-button">প্রতিযোগিতা</button>
             <button onClick={() => scrollToSection('prizes')} className="nav-button">পুরস্কার</button>
+            <button onClick={() => scrollToSection('gallery')} className="nav-button">গ্যালারি</button>
             <button onClick={() => scrollToSection('contact')} className="nav-button">যোগাযোগ</button>
           </div>
           <button className="mobile-nav-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -55,6 +57,7 @@ function App() {
             <button onClick={() => scrollToSection('home')} className="mobile-menu-item">হোম</button>
             <button onClick={() => scrollToSection('competition')} className="mobile-menu-item">প্রতিযোগিতা</button>
             <button onClick={() => scrollToSection('prizes')} className="mobile-menu-item">পুরস্কার</button>
+            <button onClick={() => scrollToSection('gallery')} className="mobile-menu-item">গ্যালারি</button>
             <button onClick={() => scrollToSection('contact')} className="mobile-menu-item">যোগাযোগ</button>
           </div>
         )}
@@ -123,6 +126,9 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Photo Gallery */}
+        <PhotoGallery />
 
         {/* Poster Section */}
         <section className="poster-section">
