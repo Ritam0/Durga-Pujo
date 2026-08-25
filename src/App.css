@@ -855,6 +855,7 @@ body {
   transition: all 0.25s ease;
   text-decoration: none;
   color: inherit;
+  min-width: 0;
 }
 .contact-item:hover {
   border-color: rgba(122, 24, 24, 0.25);
