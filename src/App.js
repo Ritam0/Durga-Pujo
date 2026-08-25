@@ -365,28 +365,28 @@ function App() {
                   <div className="contact-items">
                     <a href="https://forms.gle/B46FtamY4rJNJf8UA" target="_blank" rel="noopener noreferrer" className="contact-item contact-item-register">
                       <div className="contact-item-icon contact-item-icon-gold">📋</div>
-                      <div>
+                      <div className="contact-item-text">
                         <div className="contact-item-label">অনলাইন রেজিস্ট্রেশন</div>
                         <div className="contact-item-value">ফর্ম পূরণ করুন এখানে</div>
                       </div>
                     </a>
                     <a href="tel:+916289492935" className="contact-item contact-item-phone">
                       <div className="contact-item-icon"><Phone size={22} /></div>
-                      <div>
+                      <div className="contact-item-text">
                         <div className="contact-item-label">অথবা কল করুন</div>
                         <div className="contact-item-value">+91 6289 492 935</div>
                       </div>
                     </a>
                     <a href="mailto:swapnatari.contact@gmail.com" className="contact-item">
                       <div className="contact-item-icon"><Mail size={22} /></div>
-                      <div>
+                      <div className="contact-item-text">
                         <div className="contact-item-label">ইমেইল করুন</div>
                         <div className="contact-item-value">swapnatari.contact@gmail.com</div>
                       </div>
                     </a>
                     <div className="contact-item">
                       <div className="contact-item-icon"><MapPin size={22} /></div>
-                      <div>
+                      <div className="contact-item-text">
                         <div className="contact-item-label">অবস্থান</div>
                         <div className="contact-item-value">চুঁচুড়া ও ব্যান্ডেল, হুগলি</div>
                       </div>

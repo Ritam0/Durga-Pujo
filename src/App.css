@@ -762,6 +762,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 1rem;
+  min-width: 0;
 }
 .contact-logo-wrap {
   width: 110px;
@@ -823,6 +824,7 @@ body {
 }
 .contact-details-block {
   padding: 3rem 3rem;
+  min-width: 0;
 }
 .contact-cta-title {
   font-size: 1.75rem;
@@ -891,6 +893,10 @@ body {
   background: rgba(122, 24, 24, 0.08);
   border-radius: var(--radius-sm);
 }
+.contact-item-text {
+  min-width: 0;
+  flex: 1 1 0%;
+}
 .contact-item-label {
   font-size: 0.78rem;
   font-weight: 600;
@@ -903,6 +909,9 @@ body {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-dark);
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 .contact-note {
   background: linear-gradient(135deg, rgba(200, 130, 10, 0.1) 0%, rgba(200, 130, 10, 0.04) 100%);
