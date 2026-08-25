@@ -5,7 +5,7 @@ import logoImage from './gallery/logo.png';
 import posterImage from './gallery/poster-1433.png';
 import PhotoGallery from './PhotoGallery';
 
-const ANDROID_APK_URL = 'https://github.com/Ritam0/Durga-Pujo/releases/latest/download/app-release.apk';
+const ANDROID_APK_URL = `${process.env.PUBLIC_URL}/downloads/shopnotori-pujo.apk`;
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -98,7 +98,7 @@ function App() {
                 <Phone size={18} />
                 অথবা কল করুন
               </a>
-              <a href={ANDROID_APK_URL} className="hero-secondary-button">
+              <a href={ANDROID_APK_URL} download className="hero-secondary-button">
                 <Download size={18} />
                 অ্যাপ ডাউনলোড করুন
               </a>
@@ -384,7 +384,7 @@ function App() {
         <div className="footer-inner">
           <img src={logoImage} alt="স্বপ্নতরী" className="footer-logo" />
           <p className="footer-text">সেরা পুজো ১৪৩৩ • স্বপ্নতরী পরিবার</p>
-          <a href={ANDROID_APK_URL} className="footer-apk-link">
+          <a href={ANDROID_APK_URL} download className="footer-apk-link">
             <Download size={16} />
             Android অ্যাপ ডাউনলোড করুন
           </a>
