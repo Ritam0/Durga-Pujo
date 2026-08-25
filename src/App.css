@@ -358,6 +358,7 @@ body {
   margin-left: 1rem;
   transition: all 0.25s ease;
   font-family: inherit;
+  cursor: pointer;
 }
 .hero-secondary-button:hover {
   background: rgba(255, 255, 255, 0.18);
@@ -786,7 +787,15 @@ body {
   color: rgba(251, 240, 220, 0.6);
   font-weight: 500;
 }
-.facebook-button {
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.facebook-button,
+.instagram-button {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
@@ -799,9 +808,9 @@ body {
   border: 1px solid rgba(255,255,255,0.2);
   font-size: 0.95rem;
   transition: all 0.25s ease;
-  margin-top: 0.5rem;
 }
-.facebook-button:hover {
+.facebook-button:hover,
+.instagram-button:hover {
   background: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.35);
   transform: translateY(-2px);
@@ -925,6 +934,12 @@ body {
   font-weight: 600;
   color: var(--gold-pale);
 }
+.footer-app-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
 .footer-apk-link {
   display: inline-flex;
   align-items: center;
@@ -932,14 +947,75 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--gold-pale);
+  background: none;
   border: 1px solid rgba(200, 130, 10, 0.5);
   border-radius: 999px;
   padding: 0.4rem 1rem;
   text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
   transition: background 0.2s ease;
 }
 .footer-apk-link:hover {
   background: rgba(200, 130, 10, 0.15);
+}
+
+/* ─── iOS Install Instructions Modal ───────────────────────── */
+.ios-install-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 5, 5, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 1000;
+}
+.ios-install-modal {
+  position: relative;
+  background: var(--cream, #FFF8E8);
+  border-radius: 20px;
+  padding: 2rem 1.75rem 1.75rem;
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+.ios-install-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--maroon-dark, #7a1f1f);
+  padding: 0.25rem;
+}
+.ios-install-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+}
+.ios-install-modal h3 {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  color: var(--maroon-dark, #7a1f1f);
+}
+.ios-install-step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: left;
+  background: rgba(200, 130, 10, 0.1);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.6rem;
+  color: var(--maroon-dark, #7a1f1f);
+  font-size: 0.92rem;
+}
+.ios-install-step svg {
+  flex-shrink: 0;
 }
 .footer-copy {
   font-size: 0.82rem;
@@ -1000,6 +1076,7 @@ body {
 .nav-button:focus-visible,
 .hero-cta-button:focus-visible,
 .facebook-button:focus-visible,
+.instagram-button:focus-visible,
 .contact-item:focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: 3px;

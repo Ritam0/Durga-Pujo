@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, MapPin, Facebook, Trophy, Calendar, Star, Download } from 'lucide-react';
+import { Menu, X, Phone, MapPin, Facebook, Instagram, Mail, Trophy, Calendar, Star, Download, Share, PlusSquare } from 'lucide-react';
 import './App.css';
 import logoImage from './gallery/logo.png';
 import posterImage from './gallery/poster-1433.png';
@@ -9,6 +9,7 @@ const ANDROID_APK_URL = `${process.env.PUBLIC_URL}/downloads/shopnotori-pujo.apk
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showIOSInstallHint, setShowIOSInstallHint] = useState(false);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -100,8 +101,12 @@ function App() {
               </a>
               <a href={ANDROID_APK_URL} download className="hero-secondary-button">
                 <Download size={18} />
-                অ্যাপ ডাউনলোড করুন
+                Android অ্যাপ ডাউনলোড করুন
               </a>
+              <button onClick={() => setShowIOSInstallHint(true)} className="hero-secondary-button">
+                <Download size={18} />
+                iOS অ্যাপ ডাউনলোড করুন
+              </button>
             </div>
           </div>
         </section>
@@ -329,15 +334,26 @@ function App() {
                   </div>
                   <h3 className="contact-brand">স্বপ্নতরী</h3>
                   <p className="contact-tagline">সেরা পুজো ১৪৩৩ আয়োজক</p>
-                  <a
-                    href="https://www.facebook.com/groups/766326619283876"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="facebook-button"
-                  >
-                    <Facebook size={20} />
-                    আমাদের ফেসবুক গ্রুপ
-                  </a>
+                  <div className="social-buttons">
+                    <a
+                      href="https://www.facebook.com/groups/766326619283876"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="facebook-button"
+                    >
+                      <Facebook size={20} />
+                      আমাদের ফেসবুক গ্রুপ
+                    </a>
+                    <a
+                      href="https://www.instagram.com/swapnatari.contact/?hl=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="instagram-button"
+                    >
+                      <Instagram size={20} />
+                      ইনস্টাগ্রাম
+                    </a>
+                  </div>
                 </div>
 
                 <div className="contact-details-block animate-fade-in-right">
@@ -359,6 +375,13 @@ function App() {
                       <div>
                         <div className="contact-item-label">অথবা কল করুন</div>
                         <div className="contact-item-value">+91 6289 492 935</div>
+                      </div>
+                    </a>
+                    <a href="mailto:swapnatari.contact@gmail.com" className="contact-item">
+                      <div className="contact-item-icon"><Mail size={22} /></div>
+                      <div>
+                        <div className="contact-item-label">ইমেইল করুন</div>
+                        <div className="contact-item-value">swapnatari.contact@gmail.com</div>
                       </div>
                     </a>
                     <div className="contact-item">
@@ -384,13 +407,39 @@ function App() {
         <div className="footer-inner">
           <img src={logoImage} alt="স্বপ্নতরী" className="footer-logo" />
           <p className="footer-text">সেরা পুজো ১৪৩৩ • স্বপ্নতরী পরিবার</p>
-          <a href={ANDROID_APK_URL} download className="footer-apk-link">
-            <Download size={16} />
-            Android অ্যাপ ডাউনলোড করুন
-          </a>
+          <div className="footer-app-links">
+            <a href={ANDROID_APK_URL} download className="footer-apk-link">
+              <Download size={16} />
+              Android অ্যাপ ডাউনলোড করুন
+            </a>
+            <button onClick={() => setShowIOSInstallHint(true)} className="footer-apk-link">
+              <Download size={16} />
+              iOS অ্যাপ ডাউনলোড করুন
+            </button>
+          </div>
           <p className="footer-copy">&copy; {new Date().getFullYear()} স্বপ্নতরী। সর্বস্বত্ব সংরক্ষিত।</p>
         </div>
       </footer>
+
+      {showIOSInstallHint && (
+        <div className="ios-install-backdrop" onClick={() => setShowIOSInstallHint(false)}>
+          <div className="ios-install-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="ios-install-close" onClick={() => setShowIOSInstallHint(false)}>
+              <X size={20} />
+            </button>
+            <img src={logoImage} alt="স্বপ্নতরী" className="ios-install-logo" />
+            <h3>আপনার iPhone-এ অ্যাপ ইনস্টল করুন</h3>
+            <div className="ios-install-step">
+              <Share size={20} />
+              <span>নিচের <strong>Share</strong> বাটনে ট্যাপ করুন</span>
+            </div>
+            <div className="ios-install-step">
+              <PlusSquare size={20} />
+              <span><strong>"Add to Home Screen"</strong> নির্বাচন করুন</span>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
