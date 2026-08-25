@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">স্বপ্নতরী</string>
+    <string name="title_activity_main">স্বপ্নতরী</string>
+    <string name="package_name">com.shopnotori.pujo</string>
+    <string name="custom_url_scheme">com.shopnotori.pujo</string>
+</resources>

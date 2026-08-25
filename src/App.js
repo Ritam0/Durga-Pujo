@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, MapPin, Facebook, Trophy, Calendar, Star } from 'lucide-react';
+import { Menu, X, Phone, MapPin, Facebook, Trophy, Calendar, Star, Download } from 'lucide-react';
 import './App.css';
 import logoImage from './gallery/logo.png';
 import posterImage from './gallery/poster-1433.png';
 import PhotoGallery from './PhotoGallery';
+
+const ANDROID_APK_URL = 'https://github.com/Ritam0/Durga-Pujo/releases/latest/download/app-release.apk';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -95,6 +97,10 @@ function App() {
               <a href="tel:+916289492935" className="hero-secondary-button">
                 <Phone size={18} />
                 অথবা কল করুন
+              </a>
+              <a href={ANDROID_APK_URL} className="hero-secondary-button">
+                <Download size={18} />
+                অ্যাপ ডাউনলোড করুন
               </a>
             </div>
           </div>
@@ -378,6 +384,10 @@ function App() {
         <div className="footer-inner">
           <img src={logoImage} alt="স্বপ্নতরী" className="footer-logo" />
           <p className="footer-text">সেরা পুজো ১৪৩৩ • স্বপ্নতরী পরিবার</p>
+          <a href={ANDROID_APK_URL} className="footer-apk-link">
+            <Download size={16} />
+            Android অ্যাপ ডাউনলোড করুন
+          </a>
           <p className="footer-copy">&copy; {new Date().getFullYear()} স্বপ্নতরী। সর্বস্বত্ব সংরক্ষিত।</p>
         </div>
       </footer>

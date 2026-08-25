@@ -925,6 +925,22 @@ body {
   font-weight: 600;
   color: var(--gold-pale);
 }
+.footer-apk-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gold-pale);
+  border: 1px solid rgba(200, 130, 10, 0.5);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.footer-apk-link:hover {
+  background: rgba(200, 130, 10, 0.15);
+}
 .footer-copy {
   font-size: 0.82rem;
   color: rgba(251, 240, 220, 0.45);
