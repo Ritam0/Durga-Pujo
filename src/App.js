@@ -341,8 +341,9 @@ function App() {
                       rel="noopener noreferrer"
                       className="facebook-button"
                     >
-                      <Facebook size={20} />
-                      আমাদের ফেসবুক গ্রুপ
+                      <Facebook size={20} className="social-button-icon" />
+                      <span>আমাদের ফেসবুক গ্রুপ</span>
+                      <span className="social-button-spacer" aria-hidden="true" />
                     </a>
                     <a
                       href="https://www.instagram.com/swapnatari.contact/?hl=en"
@@ -350,8 +351,9 @@ function App() {
                       rel="noopener noreferrer"
                       className="instagram-button"
                     >
-                      <Instagram size={20} />
-                      ইনস্টাগ্রাম
+                      <Instagram size={20} className="social-button-icon" />
+                      <span>ইনস্টাগ্রাম</span>
+                      <span className="social-button-spacer" aria-hidden="true" />
                     </a>
                   </div>
                 </div>
