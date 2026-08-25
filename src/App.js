@@ -343,7 +343,6 @@ function App() {
                     >
                       <Facebook size={20} className="social-button-icon" />
                       <span>আমাদের ফেসবুক গ্রুপ</span>
-                      <span className="social-button-spacer" aria-hidden="true" />
                     </a>
                     <a
                       href="https://www.instagram.com/swapnatari.contact/?hl=en"
@@ -353,7 +352,6 @@ function App() {
                     >
                       <Instagram size={20} className="social-button-icon" />
                       <span>ইনস্টাগ্রাম</span>
-                      <span className="social-button-spacer" aria-hidden="true" />
                     </a>
                   </div>
                 </div>
