@@ -3,6 +3,7 @@ import { Menu, X, Phone, MapPin, Facebook, Instagram, Mail, Trophy, Calendar, St
 import './App.css';
 import logoImage from './gallery/logo.png';
 import posterImage from './gallery/poster-1433.png';
+import durgaHeroImage from './gallery/durga-hero.png';
 import PhotoGallery from './PhotoGallery';
 
 const ANDROID_APK_URL = `${process.env.PUBLIC_URL}/downloads/shopnotori-pujo.apk`;
@@ -70,43 +71,51 @@ function App() {
         {/* Hero Section */}
         <section id="home" className="hero-section">
           <div className="hero-overlay" />
-          <div className="hero-content animate-fade-in-up">
-            <p className="hero-organizer">স্বপ্নতরী পরিবারের উদ্যোগে</p>
-            <h1 className="hero-title">সেরা পুজো</h1>
-            <h1 className="hero-year">১৪৩৩</h1>
-            <div className="hero-badge animate-float">রেজিস্ট্রেশন শুরু হয়েছে!</div>
-            <div className="hero-stats">
-              <div className="hero-stat">
-                <span className="stat-value">১৬+</span>
-                <span className="stat-label">পুরস্কার</span>
+          <div className="hero-inner">
+            <div className="hero-content animate-fade-in-up">
+              <p className="hero-organizer">স্বপ্নতরী পরিবারের উদ্যোগে</p>
+              <h1 className="hero-title">সেরা পুজো</h1>
+              <h1 className="hero-year">১৪৩৩</h1>
+              <div className="hero-badge animate-float">রেজিস্ট্রেশন শুরু হয়েছে!</div>
+              <div className="hero-stats">
+                <div className="hero-stat">
+                  <span className="stat-value">১৬+</span>
+                  <span className="stat-label">পুরস্কার</span>
+                </div>
+                <div className="stat-divider" />
+                <div className="hero-stat">
+                  <span className="stat-value">₹৫০০</span>
+                  <span className="stat-label">প্রবেশমূল্য</span>
+                </div>
+                <div className="stat-divider" />
+                <div className="hero-stat">
+                  <span className="stat-value">৩</span>
+                  <span className="stat-label">বিভাগ</span>
+                </div>
               </div>
-              <div className="stat-divider" />
-              <div className="hero-stat">
-                <span className="stat-value">₹৫০০</span>
-                <span className="stat-label">প্রবেশমূল্য</span>
-              </div>
-              <div className="stat-divider" />
-              <div className="hero-stat">
-                <span className="stat-value">৩</span>
-                <span className="stat-label">বিভাগ</span>
+              <div className="hero-buttons">
+                <a href="https://forms.gle/B46FtamY4rJNJf8UA" target="_blank" rel="noopener noreferrer" className="hero-cta-button animate-pulse-slow">
+                  এখনই রেজিস্ট্রেশন করুন
+                </a>
+                <a href="tel:+916289492935" className="hero-secondary-button">
+                  <Phone size={18} />
+                  অথবা কল করুন
+                </a>
+                <a href={ANDROID_APK_URL} download className="hero-secondary-button">
+                  <Download size={18} />
+                  Android অ্যাপ ডাউনলোড করুন
+                </a>
+                <button onClick={() => setShowIOSInstallHint(true)} className="hero-secondary-button">
+                  <Download size={18} />
+                  iOS অ্যাপ ডাউনলোড করুন
+                </button>
               </div>
             </div>
-            <div className="hero-buttons">
-              <a href="https://forms.gle/B46FtamY4rJNJf8UA" target="_blank" rel="noopener noreferrer" className="hero-cta-button animate-pulse-slow">
-                এখনই রেজিস্ট্রেশন করুন
-              </a>
-              <a href="tel:+916289492935" className="hero-secondary-button">
-                <Phone size={18} />
-                অথবা কল করুন
-              </a>
-              <a href={ANDROID_APK_URL} download className="hero-secondary-button">
-                <Download size={18} />
-                Android অ্যাপ ডাউনলোড করুন
-              </a>
-              <button onClick={() => setShowIOSInstallHint(true)} className="hero-secondary-button">
-                <Download size={18} />
-                iOS অ্যাপ ডাউনলোড করুন
-              </button>
+
+            <div className="hero-art animate-fade-in-right">
+              <div className="hero-art-glow" />
+              <div className="hero-art-ring" />
+              <img src={durgaHeroImage} alt="মা দুর্গা" className="hero-art-img" />
             </div>
           </div>
         </section>
