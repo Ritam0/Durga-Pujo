@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="/favicon.ico" />
+<title>রসিদ তৈরি করুন - স্বপ্নতরী | সেরা পুজো ১৪৩৩</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap');
+
+  :root{
+    --maroon:        #7A1818;
+    --maroon-dark:   #5A0F0F;
+    --maroon-light:  #9B2222;
+    --gold:          #C8820A;
+    --gold-light:    #E8A520;
+    --gold-pale:     #F5D78E;
+    --cream:         #FBF0DC;
+    --cream-dark:    #F2E4C4;
+    --text-dark:     #3A1A08;
+    --text-mid:      #5A3520;
+    --text-light:    #8B6245;
+    --white:         #FFFFFF;
+    --shadow-card:   0 8px 32px rgba(90, 15, 15, 0.15);
+    --shadow-lg:     0 20px 48px rgba(90, 15, 15, 0.22);
+    --font-display:  'Baloo Da 2', 'Hind Siliguri', sans-serif;
+    --font-serif:    'Tiro Bangla', 'Hind Siliguri', serif;
+    --font-body:     'Hind Siliguri', -apple-system, sans-serif;
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin:0;
+    min-height:100vh;
+    font-family: var(--font-body);
+    background: linear-gradient(160deg, var(--cream) 0%, var(--cream-dark) 100%);
+    color: var(--text-dark);
+    padding: 24px 16px 64px;
+  }
+
+  .page-header{
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    text-align: center;
+  }
+  .page-header img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 10px;
+  }
+  .page-header h1{
+    font-family: var(--font-display);
+    color: var(--maroon-dark);
+    font-size: 1.6rem;
+    margin: 0 0 4px;
+  }
+  .page-header p{
+    color: var(--text-light);
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .layout{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 28px;
+    align-items: start;
+  }
+  @media (max-width: 880px){
+    .layout{ grid-template-columns: 1fr; }
+  }
+
+  .form-card{
+    background: var(--white);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--cream-dark);
+  }
+  .form-card h2{
+    font-family: var(--font-display);
+    color: var(--maroon);
+    font-size: 1.15rem;
+    margin: 0 0 18px;
+  }
+  .field{ margin-bottom: 16px; }
+  .field label{
+    display:block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-mid);
+    margin-bottom: 6px;
+  }
+  .field input, .field select{
+    width: 100%;
+    padding: 11px 12px;
+    border-radius: 10px;
+    border: 1.5px solid var(--cream-dark);
+    background: var(--cream);
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color .15s ease, box-shadow .15s ease;
+  }
+  .field input:focus, .field select:focus{
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(200,130,10,0.15);
+  }
+  .field .hint{
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 4px;
+  }
+  .field-row{
+    display:flex;
+    gap: 12px;
+  }
+  .field-row .field{ flex:1; }
+
+  .amount-fixed{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background: linear-gradient(135deg, var(--gold-pale), var(--cream-dark));
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-weight: 700;
+    color: var(--maroon-dark);
+    border: 1.5px solid var(--gold-light);
+  }
+
+  .btn-row{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 22px;
+  }
+  .btn{
+    border:none;
+    border-radius: 12px;
+    padding: 13px 16px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 8px;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:active{ transform: scale(0.97); }
+  .btn-primary{
+    background: linear-gradient(135deg, var(--maroon), var(--maroon-light));
+    color: var(--white);
+    box-shadow: var(--shadow-card);
+  }
+  .btn-primary:hover{ box-shadow: var(--shadow-lg); }
+  .btn-secondary{
+    background: var(--cream);
+    color: var(--maroon-dark);
+    border: 1.5px solid var(--gold-light);
+  }
+  .btn:disabled{ opacity: 0.55; cursor: not-allowed; }
+
+  .error-msg{
+    color: #B3261E;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    display:none;
+  }
+
+  /* Receipt preview */
+  .preview-wrap{
+    display:flex;
+    justify-content:center;
+  }
+  #receipt{
+    width: 100%;
+    max-width: 680px;
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: var(--shadow-lg);
+    padding: 36px 40px;
+    position: relative;
+    border: 2px solid var(--gold-light);
+  }
+  #receipt::before{
+    content:"";
+    position:absolute;
+    inset: 8px;
+    border: 1.5px dashed var(--gold-pale);
+    border-radius: 8px;
+    pointer-events: none;
+  }
+  .r-header{
+    display:flex;
+    align-items:center;
+    gap: 16px;
+    border-bottom: 2px solid var(--gold-light);
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+  }
+  .r-header img{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .r-header .org-name{
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--maroon-dark);
+    line-height: 1.1;
+  }
+  .r-header .org-sub{
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .r-header .r-title{
+    margin-left: auto;
+    text-align: right;
+  }
+  .r-header .r-title .big{
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    color: var(--maroon);
+    letter-spacing: 1px;
+  }
+  .r-header .r-title .small{
+    font-size: 0.78rem;
+    color: var(--text-light);
+  }
+
+  .r-meta{
+    display:flex;
+    justify-content:space-between;
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    margin-bottom: 18px;
+  }
+  .r-meta b{ color: var(--text-dark); }
+
+  .r-row{
+    display:flex;
+    padding: 10px 0;
+    border-bottom: 1px dotted var(--cream-dark);
+    font-size: 0.95rem;
+  }
+  .r-row .label{
+    width: 180px;
+    flex-shrink:0;
+    color: var(--text-light);
+    font-weight: 600;
+  }
+  .r-row .value{
+    color: var(--text-dark);
+    font-weight: 600;
+    word-break: break-word;
+  }
+
+  .r-amount-box{
+    margin-top: 20px;
+    background: linear-gradient(135deg, var(--gold-pale), var(--cream));
+    border: 1.5px solid var(--gold-light);
+    border-radius: 12px;
+    padding: 16px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .r-amount-box .lbl{
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    font-weight: 600;
+  }
+  .r-amount-box .amt{
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--maroon-dark);
+    font-weight: 800;
+  }
+  .r-words{
+    margin-top: 8px;
+    font-size: 0.82rem;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  .r-purpose{
+    margin-top: 18px;
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    background: var(--cream);
+    border-radius: 10px;
+    padding: 12px 14px;
+    line-height: 1.6;
+  }
+
+  .r-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-top: 42px;
+  }
+  .r-footer .contact{
+    font-size: 0.78rem;
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+  .r-footer .sign{
+    text-align:center;
+  }
+  .r-footer .sign .sign-name{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--maroon-dark);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .r-footer .sign .line{
+    width: 160px;
+    border-top: 1.5px solid var(--text-mid);
+    margin-bottom: 6px;
+  }
+  .r-footer .sign .cap{
+    font-size: 0.78rem;
+    color: var(--text-light);
+  }
+
+  .r-stamp{
+    display: inline-block;
+    margin-top: 10px;
+    transform: rotate(-14deg);
+    border: 3px solid #1E7E34;
+    color: #1E7E34;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 5px 12px;
+    border-radius: 8px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 480px){
+    #receipt{ padding: 24px 18px; }
+    .r-header{ flex-wrap: wrap; }
+    .r-header .r-title{ margin-left: 0; text-align:left; width:100%; margin-top: 8px; }
+    .r-row .label{ width: 130px; font-size: 0.85rem; }
+    .r-amount-box .amt{ font-size: 1.5rem; }
+    .r-footer{ flex-direction: column; align-items: flex-start; gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="page-header">
+    <img src="/logo512.png" alt="স্বপ্নতরী" />
+    <h1>রসিদ তৈরি করুন</h1>
+    <p>স্বপ্নতরী · সেরা পুজো ১৪৩৩ — রেজিস্ট্রেশন ফি রসিদ (₹৫০০)</p>
+  </div>
+
+  <div class="layout">
+    <div class="form-card">
+      <h2>তথ্য দিন</h2>
+
+      <div class="field">
+        <label for="committeeName">পুজো কমিটির নাম *</label>
+        <input type="text" id="committeeName" placeholder="যেমন: xyz সর্বজনীন দুর্গোৎসব কমিটি" />
+      </div>
+
+      <div class="field">
+        <label for="contactPerson">যোগাযোগকারী ব্যক্তির নাম *</label>
+        <input type="text" id="contactPerson" placeholder="যেমন: রাম কুমার" />
+      </div>
+
+      <div class="field">
+        <label for="mobileNumber">মোবাইল নম্বর *</label>
+        <input type="tel" id="mobileNumber" placeholder="১০ সংখ্যার নম্বর" maxlength="10" inputmode="numeric" />
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="receiptNo">রসিদ নম্বর</label>
+          <input type="text" id="receiptNo" />
+        </div>
+        <div class="field">
+          <label for="receiptDate">তারিখ</label>
+          <input type="date" id="receiptDate" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="paymentMode">পেমেন্ট মাধ্যম</label>
+        <select id="paymentMode">
+          <option value="নগদ (Cash)">নগদ (Cash)</option>
+          <option value="UPI">UPI</option>
+          <option value="ব্যাংক ট্রান্সফার">ব্যাংক ট্রান্সফার</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>পরিমাণ</label>
+        <div class="amount-fixed">
+          <span>রেজিস্ট্রেশন ফি</span>
+          <span>₹ ৫০০ / ₹500</span>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-primary" id="downloadBtn">⬇ রসিদ ডাউনলোড করুন (ছবি)</button>
+        <button class="btn btn-secondary" id="printBtn">🖨 প্রিন্ট / PDF করুন</button>
+      </div>
+      <div class="error-msg" id="errorMsg">অনুগ্রহ করে * চিহ্নিত সব তথ্য সঠিকভাবে পূরণ করুন (মোবাইল নম্বর ১০ সংখ্যার হতে হবে)।</div>
+    </div>
+
+    <div class="preview-wrap">
+      <div id="receipt">
+        <div class="r-header">
+          <img src="/logo512.png" alt="স্বপ্নতরী" />
+          <div>
+            <div class="org-name">স্বপ্নতরী</div>
+            <div class="org-sub">সেরা পুজো ১৪৩৩</div>
+          </div>
+          <div class="r-title">
+            <div class="small">Money Receipt</div>
+            <div class="r-stamp">PAID</div>
+          </div>
+        </div>
+
+        <div class="r-meta">
+          <span>রসিদ নং: <b id="pReceiptNo">—</b></span>
+          <span>তারিখ: <b id="pDate">—</b></span>
+        </div>
+
+        <div class="r-row">
+          <div class="label">প্রাপ্ত হলো (Received From)</div>
+          <div class="value" id="pCommittee">—</div>
+        </div>
+        <div class="r-row">
+          <div class="label">যোগাযোগকারী ব্যক্তি</div>
+          <div class="value" id="pContact">—</div>
+        </div>
+        <div class="r-row">
+          <div class="label">মোবাইল নম্বর</div>
+          <div class="value" id="pMobile">—</div>
+        </div>
+        <div class="r-row">
+          <div class="label">পেমেন্ট মাধ্যম</div>
+          <div class="value" id="pPayment">—</div>
+        </div>
+
+        <div class="r-amount-box">
+          <span class="lbl">প্রদত্ত অর্থ (Amount Paid)</span>
+          <span class="amt">₹ ৫০০</span>
+        </div>
+        <div class="r-words">কথায়: পাঁচশত টাকা মাত্র (Rupees Five Hundred Only)</div>
+
+        <div class="r-purpose">
+          <b>বিষয়:</b> "সেরা পুজো ১৪৩৩" প্রতিযোগিতায় অংশগ্রহণের জন্য রেজিস্ট্রেশন ফি বাবদ উপরোক্ত পুজো কমিটির কাছ থেকে ₹৫০০ (পাঁচশত টাকা মাত্র) গ্রহণ করা হলো।
+        </div>
+
+        <div class="r-footer">
+          <div class="contact">
+            স্বপ্নতরী পরিবার<br/>
+            চুঁচুড়া ও ব্যান্ডেল, হুগলি<br/>
+            +91 6289 492 935 · swapnatari.contact@gmail.com
+          </div>
+          <div class="sign">
+            <div class="sign-name">Abhinandan Roy</div>
+            <div class="line"></div>
+            <div class="cap">কর্তৃপক্ষের স্বাক্ষর</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+    const committeeInput = document.getElementById('committeeName');
+    const contactInput = document.getElementById('contactPerson');
+    const mobileInput = document.getElementById('mobileNumber');
+    const receiptNoInput = document.getElementById('receiptNo');
+    const receiptDateInput = document.getElementById('receiptDate');
+    const paymentModeInput = document.getElementById('paymentMode');
+
+    const pCommittee = document.getElementById('pCommittee');
+    const pContact = document.getElementById('pContact');
+    const pMobile = document.getElementById('pMobile');
+    const pPayment = document.getElementById('pPayment');
+    const pReceiptNo = document.getElementById('pReceiptNo');
+    const pDate = document.getElementById('pDate');
+    const errorMsg = document.getElementById('errorMsg');
+
+    const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+    function toBanglaNumber(str){
+      return String(str).replace(/[0-9]/g, d => banglaDigits[d]);
+    }
+
+    function formatDateDisplay(isoDate){
+      if(!isoDate) return '—';
+      const [y,m,d] = isoDate.split('-');
+      const months = ['জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে','জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর'];
+      return `${toBanglaNumber(parseInt(d,10))} ${months[parseInt(m,10)-1]}, ${toBanglaNumber(y)}`;
+    }
+
+    function initDefaults(){
+      const today = new Date();
+      const iso = today.toISOString().slice(0,10);
+      receiptDateInput.value = iso;
+      receiptNoInput.value = 'SP1433-' + today.getFullYear() + String(today.getMonth()+1).padStart(2,'0') + String(today.getDate()).padStart(2,'0') + '-' + Math.floor(100 + Math.random()*900);
+      updatePreview();
+    }
+
+    function updatePreview(){
+      pCommittee.textContent = committeeInput.value.trim() || '—';
+      pContact.textContent = contactInput.value.trim() || '—';
+      pMobile.textContent = mobileInput.value.trim() || '—';
+      pPayment.textContent = paymentModeInput.value;
+      pReceiptNo.textContent = receiptNoInput.value.trim() || '—';
+      pDate.textContent = formatDateDisplay(receiptDateInput.value);
+    }
+
+    [committeeInput, contactInput, mobileInput, receiptNoInput, receiptDateInput, paymentModeInput]
+      .forEach(el => el.addEventListener('input', updatePreview));
+
+    mobileInput.addEventListener('input', () => {
+      mobileInput.value = mobileInput.value.replace(/\D/g, '').slice(0,10);
+      updatePreview();
+    });
+
+    function validate(){
+      const valid = committeeInput.value.trim().length > 0 &&
+                    contactInput.value.trim().length > 0 &&
+                    /^\d{10}$/.test(mobileInput.value.trim());
+      errorMsg.style.display = valid ? 'none' : 'block';
+      return valid;
+    }
+
+    document.getElementById('downloadBtn').addEventListener('click', async () => {
+      if(!validate()){
+        document.getElementById('receipt').scrollIntoView({behavior:'smooth', block:'center'});
+        return;
+      }
+      const btn = document.getElementById('downloadBtn');
+      const originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'তৈরি হচ্ছে...';
+      try{
+        const receiptEl = document.getElementById('receipt');
+        const canvas = await html2canvas(receiptEl, { scale: 3, backgroundColor: '#ffffff', useCORS: true });
+        const link = document.createElement('a');
+        const safeName = (committeeInput.value.trim() || 'receipt').replace(/[^a-zA-Z0-9ঀ-৿]+/g, '_');
+        link.download = `receipt_${safeName}_${receiptNoInput.value.trim()}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      }catch(err){
+        alert('ছবি তৈরি করতে সমস্যা হয়েছে। অনুগ্রহ করে প্রিন্ট / PDF অপশন ব্যবহার করুন।');
+        console.error(err);
+      }finally{
+        btn.disabled = false;
+        btn.textContent = originalText;
+      }
+    });
+
+    document.getElementById('printBtn').addEventListener('click', () => {
+      if(!validate()){
+        document.getElementById('receipt').scrollIntoView({behavior:'smooth', block:'center'});
+        return;
+      }
+      window.print();
+    });
+
+    initDefaults();
+  </script>
+
+  <style>
+    @media print{
+      body *{ visibility: hidden; }
+      #receipt, #receipt *{ visibility: visible; }
+      #receipt{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid #ccc;
+      }
+      .page-header, .form-card{ display:none !important; }
+    }
+  </style>
+
+</body>
+</html>
