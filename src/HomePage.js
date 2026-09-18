@@ -34,8 +34,8 @@ function HomePage() {
       {/* Announcement Banner */}
       <div className="announcement-banner">
         <div className="banner-track">
-          <span>🎊&nbsp; রেজিস্ট্রেশন শুরু হয়েছে! &nbsp;|&nbsp; এখনই যোগাযোগ করুন: +91 6289 492 935 &nbsp;|&nbsp; সেরা পুজো ১৪৩৩ &nbsp;|&nbsp; স্বপ্নতরী পরিবারের উদ্যোগে &nbsp;|&nbsp; চুঁচুড়া ও ব্যান্ডেল এলাকার পুজো &nbsp;|&nbsp; প্রবেশমূল্য ₹৫০০ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span>🎊&nbsp; রেজিস্ট্রেশন শুরু হয়েছে! &nbsp;|&nbsp; এখনই যোগাযোগ করুন: +91 6289 492 935 &nbsp;|&nbsp; সেরা পুজো ১৪৩৩ &nbsp;|&nbsp; স্বপ্নতরী পরিবারের উদ্যোগে &nbsp;|&nbsp; চুঁচুড়া ও ব্যান্ডেল এলাকার পুজো &nbsp;|&nbsp; প্রবেশমূল্য ₹৫০০ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span>🎊&nbsp; রেজিস্ট্রেশন শুরু হয়েছে! &nbsp;|&nbsp; এখনই যোগাযোগ করুন: +91 6289 492 935 &nbsp;|&nbsp; সেরা পুজো ১৪৩৩ &nbsp;|&nbsp; স্বপ্নতরী পরিবারের উদ্যোগে &nbsp;|&nbsp; পুরো দেশ জুড়ে যে কেউ অংশগ্রহণ করতে পারবেন &nbsp;|&nbsp; প্রবেশমূল্য ₹৫০০ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span>🎊&nbsp; রেজিস্ট্রেশন শুরু হয়েছে! &nbsp;|&nbsp; এখনই যোগাযোগ করুন: +91 6289 492 935 &nbsp;|&nbsp; সেরা পুজো ১৪৩৩ &nbsp;|&nbsp; স্বপ্নতরী পরিবারের উদ্যোগে &nbsp;|&nbsp; পুরো দেশ জুড়ে যে কেউ অংশগ্রহণ করতে পারবেন &nbsp;|&nbsp; প্রবেশমূল্য ₹৫০০ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </div>
       </div>
 
@@ -147,7 +147,7 @@ function HomePage() {
             <div className="schedule-card animate-fade-in-right">
               <div className="schedule-icon"><MapPin size={28} /></div>
               <div>
-                <div className="schedule-label">এলাকা</div>
+                <div className="schedule-label">অফলাইন পরিদর্শন এলাকা</div>
                 <div className="schedule-value">চুঁচুড়া ও ব্যান্ডেল</div>
               </div>
             </div>
@@ -175,7 +175,7 @@ function HomePage() {
                 <h3>সেরা পুজো ১৪৩৩ সম্পর্কে</h3>
               </div>
               <p className="info-text">
-                শারদোৎসবকে আরও আনন্দময় ও প্রতিযোগিতামূলক করে তুলতে আমাদের স্বপ্নতরী পরিবারের পক্ষ থেকে আবারও আয়োজন করা হয়েছে <strong>"সেরা পুজো ১৪৩৩"</strong> প্রতিযোগিতার।
+                শারদোৎসবকে আরও আনন্দময় ও প্রতিযোগিতামূলক করে তুলতে আমাদের স্বপ্নতরী পরিবারের পক্ষ থেকে আবারও আয়োজন করা হয়েছে <strong>"সেরা পুজো ১৪৩৩"</strong> প্রতিযোগিতার। এবার থেকে <strong>পুরো দেশ জুড়ে</strong> যে কেউ এই প্রতিযোগিতায় অংশগ্রহণ করতে পারবেন।
               </p>
 
               <div className="details-grid">
@@ -196,8 +196,8 @@ function HomePage() {
                 <div className="detail-pill">
                   <span className="detail-icon">📍</span>
                   <div>
-                    <div className="detail-title">প্রযোজ্য এলাকা</div>
-                    <div className="detail-desc">চুঁচুড়া ও ব্যান্ডেল এলাকার পুজো</div>
+                    <div className="detail-title">অংশগ্রহণ এলাকা</div>
+                    <div className="detail-desc">পুরো দেশ জুড়ে যে কেউ অংশগ্রহণ করতে পারবেন</div>
                   </div>
                 </div>
                 <div className="detail-pill detail-pill-gold">
@@ -216,11 +216,12 @@ function HomePage() {
                 <span>📋</span> নিয়মাবলী ও বিবরণ
               </h3>
               <ul className="rules-list">
-                <li>বিচারকমণ্ডলী নির্ধারিত দিনে (<strong>পঞ্চমী ও ষষ্ঠী</strong>) সরাসরি পুজো পরিদর্শন করবেন</li>
+                <li><strong>চুঁচুড়া ও ব্যান্ডেল</strong> এলাকার পুজোর জন্য বিচারকমণ্ডলী নির্ধারিত দিনে (<strong>পঞ্চমী ও ষষ্ঠী</strong>) সরাসরি পুজো পরিদর্শন করবেন</li>
+                <li>দেশের বাকি অংশের পুজোর জন্য অনলাইনে বিচার করা হবে</li>
+                <li><strong>পুরো দেশ জুড়ে</strong> যেকোনো বারোয়ারি / ক্লাবের পুজো কমিটি এবং বাড়ির পুজো অংশগ্রহণ করতে পারবে</li>
                 <li>প্রতিযোগীর সংখ্যা ও অংশগ্রহণের ভিত্তিতে পুরস্কারের সংখ্যা আরও বৃদ্ধি করা হতে পারে</li>
                 <li>পুরস্কার বিতরণ হবে <strong>সপ্তমী ও অষ্টমীর দিন</strong></li>
                 <li>ফর্ম পূরণ হয়ে গেলে WhatsApp গ্রুপে যোগ করা হবে — সমস্ত তথ্য সেখানেই দেওয়া হবে</li>
-                <li>শুধুমাত্র <strong>চুঁচুড়া ও ব্যান্ডেল</strong> এলাকার পুজো কমিটি এবং বাড়ির পুজোর জন্য প্রযোজ্য</li>
                 <li className="rules-important">বিচারকমণ্ডলীর সিদ্ধান্তই চূড়ান্ত সিদ্ধান্ত হিসেবে গণ্য হবে</li>
               </ul>
             </div>
@@ -403,12 +404,15 @@ function HomePage() {
                     <div className="contact-item">
                       <div className="contact-item-icon"><MapPin size={22} /></div>
                       <div className="contact-item-text">
-                        <div className="contact-item-label">অবস্থান</div>
+                        <div className="contact-item-label">অফলাইন পরিদর্শন এলাকা</div>
                         <div className="contact-item-value">চুঁচুড়া ও ব্যান্ডেল, হুগলি</div>
                       </div>
                     </div>
                   </div>
 
+                  <div className="contact-note">
+                    🌏 পুরো দেশ জুড়ে যে কেউ অংশগ্রহণ করতে পারবেন
+                  </div>
                   <div className="contact-note">
                     🎯 প্রতিযোগীর সংখ্যার ভিত্তিতে পুরস্কারের সংখ্যা আরও বৃদ্ধি করা হতে পারে
                   </div>
