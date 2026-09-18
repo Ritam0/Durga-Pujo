@@ -183,6 +183,17 @@ body {
   color: var(--maroon);
   transform: translateY(-1px);
 }
+.nav-button-banner {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background: var(--gold);
+  color: var(--text-dark);
+}
+.nav-button-banner:hover {
+  background: var(--gold-light);
+  color: var(--text-dark);
+}
 .mobile-nav-toggle {
   display: none;
   padding: 0.5rem;
@@ -219,6 +230,9 @@ body {
   background: rgba(122, 24, 24, 0.07);
   color: var(--maroon);
   transform: translateX(6px);
+}
+.mobile-menu-item-banner {
+  text-decoration: none;
 }
 
 /* ─── Hero Section ──────────────────────────────────────── */
