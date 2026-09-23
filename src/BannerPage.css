@@ -367,6 +367,15 @@
   align-items: center;
 }
 
+.banner-contact {
+  margin-top: 0.2rem;
+  font-family: var(--font-body);
+  color: var(--maroon-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+}
+
 .banner-serial-badge {
   position: absolute;
   z-index: 5;
@@ -399,6 +408,9 @@
   .banner-name-box {
     font-size: 0.78rem;
     padding: 0.5rem 0.7rem;
+  }
+  .banner-contact {
+    font-size: 0.65rem;
   }
   .banner-serial-badge {
     font-size: 0.6rem;

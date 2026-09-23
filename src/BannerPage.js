@@ -51,8 +51,8 @@ function BannerPage() {
   }, []);
 
   const fileBaseName = selected
-    ? `amra-protijogi-${selected.name.replace(/\s+/g, '-')}`
-    : 'amra-protijogi';
+    ? `gorbito-protijogi-${selected.name.replace(/\s+/g, '-')}`
+    : 'gorbito-protijogi';
 
   const handleDownloadPng = async () => {
     if (!selected) return;
@@ -96,7 +96,7 @@ function BannerPage() {
         </Link>
         <div className="banner-page-title">
           <img src={logoImage} alt="স্বপ্নতরী" className="banner-page-logo" />
-          <span>আমরা প্রতিযোগী ব্যানার</span>
+          <span>গর্বিত প্রতিযোগী ব্যানার</span>
         </div>
       </header>
 
@@ -191,11 +191,13 @@ function BannerPage() {
               <h1 className="banner-title-main">সেরা পুজো</h1>
               <div className="banner-title-year">১৪৩৩</div>
 
-              <div className="banner-ribbon">আমরা প্রতিযোগী</div>
+              <div className="banner-ribbon">গর্বিত প্রতিযোগী</div>
 
               <div className="banner-name-box">
                 {selected ? selected.name : 'কমিটির নাম নির্বাচন করুন'}
               </div>
+
+              <div className="banner-contact">যোগাযোগ: +91 6289 492 935</div>
             </div>
           </div>
         </section>

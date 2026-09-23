@@ -52,7 +52,7 @@ function HomePage() {
             <button onClick={() => scrollToSection('prizes')} className="nav-button">পুরস্কার</button>
             <button onClick={() => scrollToSection('gallery')} className="nav-button">গ্যালারি</button>
             <button onClick={() => scrollToSection('contact')} className="nav-button">যোগাযোগ</button>
-            <Link to="/banner" className="nav-button nav-button-banner">আমরা প্রতিযোগী ব্যানার</Link>
+            <Link to="/banner" className="nav-button nav-button-banner">গর্বিত প্রতিযোগী ব্যানার</Link>
           </div>
           <button className="mobile-nav-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X /> : <Menu />}
@@ -65,7 +65,7 @@ function HomePage() {
             <button onClick={() => scrollToSection('prizes')} className="mobile-menu-item">পুরস্কার</button>
             <button onClick={() => scrollToSection('gallery')} className="mobile-menu-item">গ্যালারি</button>
             <button onClick={() => scrollToSection('contact')} className="mobile-menu-item">যোগাযোগ</button>
-            <Link to="/banner" className="mobile-menu-item mobile-menu-item-banner" onClick={() => setIsMenuOpen(false)}>আমরা প্রতিযোগী ব্যানার</Link>
+            <Link to="/banner" className="mobile-menu-item mobile-menu-item-banner" onClick={() => setIsMenuOpen(false)}>গর্বিত প্রতিযোগী ব্যানার</Link>
           </div>
         )}
       </header>
@@ -106,7 +106,7 @@ function HomePage() {
                 </a>
                 <Link to="/banner" className="hero-secondary-button">
                   <ImageIcon size={18} />
-                  আমরা প্রতিযোগী ব্যানার বানান
+                  গর্বিত প্রতিযোগী ব্যানার বানান
                 </Link>
                 <a href={ANDROID_APK_URL} download className="hero-secondary-button">
                   <Download size={18} />
