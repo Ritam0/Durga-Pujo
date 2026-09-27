@@ -362,7 +362,7 @@ function HomePage() {
                       <span>আমাদের ফেসবুক গ্রুপ</span>
                     </a>
                     <a
-                      href="https://www.instagram.com/swapnatari.contact/?hl=en"
+                      href="https://www.instagram.com/swapnatari.in?utm_source=qr&stkn=MTluMmI2anRldmt4aA=="
                       target="_blank"
                       rel="noopener noreferrer"
                       className="instagram-button"
