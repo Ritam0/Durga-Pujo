@@ -134,21 +134,21 @@ function HomePage() {
               <div className="schedule-icon"><Calendar size={28} /></div>
               <div>
                 <div className="schedule-label">অফলাইন ভিজিট</div>
-                <div className="schedule-value">পঞ্চমী ও ষষ্ঠীর দিন</div>
+                <div className="schedule-value">পঞ্চমীর দিন</div>
               </div>
             </div>
             <div className="schedule-card schedule-card-gold animate-fade-in-up">
               <div className="schedule-icon"><Trophy size={28} /></div>
               <div>
                 <div className="schedule-label">পুরস্কার প্রদান</div>
-                <div className="schedule-value">সপ্তমী ও অষ্টমীর দিন</div>
+                <div className="schedule-value">সপ্তমীর দিন</div>
               </div>
             </div>
             <div className="schedule-card animate-fade-in-right">
               <div className="schedule-icon"><MapPin size={28} /></div>
               <div>
                 <div className="schedule-label">অফলাইন পরিদর্শন এলাকা</div>
-                <div className="schedule-value">চুঁচুড়া ও ব্যান্ডেল</div>
+                <div className="schedule-value">চুঁচুড়া, ব্যান্ডেল ও চন্দননগর</div>
               </div>
             </div>
           </div>
@@ -207,6 +207,13 @@ function HomePage() {
                     <div className="detail-desc">১৬টি পুরস্কার (বৃদ্ধি হতে পারে)</div>
                   </div>
                 </div>
+                <div className="detail-pill">
+                  <span className="detail-icon">⏰</span>
+                  <div>
+                    <div className="detail-title">রেজিস্ট্রেশনের শেষ তারিখ</div>
+                    <div className="detail-desc">৮ই অক্টোবর, বিকেল ৫টা</div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -216,11 +223,12 @@ function HomePage() {
                 <span>📋</span> নিয়মাবলী ও বিবরণ
               </h3>
               <ul className="rules-list">
-                <li><strong>চুঁচুড়া ও ব্যান্ডেল</strong> এলাকার পুজোর জন্য বিচারকমণ্ডলী নির্ধারিত দিনে (<strong>পঞ্চমী ও ষষ্ঠী</strong>) সরাসরি পুজো পরিদর্শন করবেন</li>
+                <li><strong>চুঁচুড়া, ব্যান্ডেল ও চন্দননগর</strong> এলাকার পুজোর জন্য বিচারকমণ্ডলী নির্ধারিত দিনে (<strong>পঞ্চমী</strong>) সরাসরি পুজো পরিদর্শন করবেন</li>
                 <li>দেশের বাকি অংশের পুজোর জন্য অনলাইনে বিচার করা হবে</li>
                 <li><strong>পুরো দেশ জুড়ে</strong> যেকোনো বারোয়ারি / ক্লাবের পুজো কমিটি এবং বাড়ির পুজো অংশগ্রহণ করতে পারবে</li>
                 <li>প্রতিযোগীর সংখ্যা ও অংশগ্রহণের ভিত্তিতে পুরস্কারের সংখ্যা আরও বৃদ্ধি করা হতে পারে</li>
-                <li>পুরস্কার বিতরণ হবে <strong>সপ্তমী ও অষ্টমীর দিন</strong></li>
+                <li className="rules-important">রেজিস্ট্রেশনের শেষ তারিখ <strong>৮ই অক্টোবর, বিকেল ৫টা</strong></li>
+                <li>পুরস্কার বিতরণ হবে <strong>সপ্তমীর দিন</strong></li>
                 <li>ফর্ম পূরণ হয়ে গেলে WhatsApp গ্রুপে যোগ করা হবে — সমস্ত তথ্য সেখানেই দেওয়া হবে</li>
                 <li className="rules-important">বিচারকমণ্ডলীর সিদ্ধান্তই চূড়ান্ত সিদ্ধান্ত হিসেবে গণ্য হবে</li>
               </ul>
@@ -297,16 +305,16 @@ function HomePage() {
                 </div>
               </div>
 
-              {/* বাড়ির পুজো */}
+              {/* সাবেকি প্রতিমা */}
               <div className="prize-category-card animate-fade-in-right">
                 <div className="category-header">
-                  <div className="category-badge category-badge-alt">বাড়ির পুজো</div>
+                  <div className="category-badge category-badge-alt">সাবেকি প্রতিমা</div>
                   <p className="category-budget">গৃহস্থ পুজো বিভাগ</p>
                 </div>
                 <div className="award-group">
                   <div className="award-type">
-                    <span className="award-type-icon">🏠</span>
-                    <span className="award-type-name">বাড়ির পুজো</span>
+                    <span className="award-type-icon">🪔</span>
+                    <span className="award-type-name">সাবেকি প্রতিমা</span>
                   </div>
                   <div className="medal-list">
                     <div className="medal-item gold">🥇 প্রথম</div>
@@ -405,7 +413,7 @@ function HomePage() {
                       <div className="contact-item-icon"><MapPin size={22} /></div>
                       <div className="contact-item-text">
                         <div className="contact-item-label">অফলাইন পরিদর্শন এলাকা</div>
-                        <div className="contact-item-value">চুঁচুড়া ও ব্যান্ডেল, হুগলি</div>
+                        <div className="contact-item-value">চুঁচুড়া, ব্যান্ডেল ও চন্দননগর, হুগলি</div>
                       </div>
                     </div>
                   </div>
